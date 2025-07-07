@@ -7,8 +7,6 @@
 - Organized file structure
 - Carousel implemented manually or via library
 
-## 🚀 Live Preview
-https://your-vercel-link.vercel.app
 
 ## 🛠️ Setup Instructions
 
