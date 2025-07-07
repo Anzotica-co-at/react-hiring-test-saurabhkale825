@@ -16,4 +16,4 @@ https://your-vercel-link.vercel.app
 ```bash
 npm install
 ###2. Start development server
-npm rn dev
+npm run dev
