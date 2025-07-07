@@ -1,0 +1,125 @@
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.carousel-slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.card-container {
+  flex: 0 0 90%;
+  min-height: 60vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  position: relative;
+}
+
+.carousel-btn-container {
+  width: 100%;
+  margin: 2% auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.carousel-btn {
+  width: 7rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+}
+.carousel-btn:hover {
+    color: #878787;
+}
+.carousel-btn:hover span{
+    transform: translateX(50%);
+}
+
+.carousel-next-btn {
+  width: 7rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 2s ease;
+}
+
+
+.carousel-next-btn span , .carousel-btn span{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: transform 2s ease;
+}
+
+.carousel-next-btn p , .carousel-btn p{
+    display: none;
+}
+
+.carousel-next-btn:hover {
+  color: #878787;
+  transition: all 2s;
+}
+
+.carousel-next-btn:hover span {
+  transform: translateX(-50%);
+  transition: position 1s, transform 2s;
+}
+
+.carousel-slide-indicator-container {
+  position: relative;
+  width: 80%;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.carousel-slide-tracker {
+  position: absolute;
+  height: 100%;
+  background-color: #916e27;
+  transition: transform 0.5s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+
+@media screen and (min-width : 1200px) {
+
+    .carousel-btn-container {
+  width: 50%;
+  margin: 2% auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+.carousel-next-btn p , .carousel-btn p{
+    display: inline-block;
+}
+
+    
+}
